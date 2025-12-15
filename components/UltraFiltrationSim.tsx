@@ -221,7 +221,6 @@ export default function UltraFiltrationSim() {
       // Avoid interfering with form inputs outside the simulation if any
       const target = e.target as HTMLElement | null;
       const tag = target?.tagName ?? "";
-
       const isTyping = tag === "INPUT" || tag === "TEXTAREA";
       if (isTyping) return;
 
